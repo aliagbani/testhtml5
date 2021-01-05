@@ -8,75 +8,104 @@
     <!-- [if lt IE 9] >
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <! [end if] -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
     <header>
-        <h1>Testing html t</h1>
-        <nav>
-            <ul>
-                <li><a href="#1">Home</a></li>
-                <li><a href="#2">Blog</a></li>
-                <li><a href="#3">News</a></li>
-                <li><a href="#4">Contact</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <h2>Title main</h2>
-        <article>
-            <h3>Article 1</h3>
-            <section>
-                <header>
-                    <h4>Section 1</h4>
-                    <p>By xAuthor</p>
-                    <p>Posted on 05 jav. 2021</p>
-                </header>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptas similique illum enim! Saepe,
-                    incidunt!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptas similique illum enim! Saepe,
-                    incidunt!
-                </p>
+    <div class="conatainer">
+        <h1 class="text-center">Title main</h2>
+        <main class="float-left">
+            <article>
+                <h3>Article 1</h3>
+                <section>
+                    <header>
+                        <h4>Section 1</h4>
+                        <p>By xAuthor</p>
+                        <p>Posted on 05 jav. 2021</p>
+                    </header>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptas similique illum enim!
+                        Saepe,
+                        incidunt!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptas similique illum enim!
+                        Saepe,
+                        incidunt!
+                    </p>
+                </section>
+            </article>
+            <article>
+                <h3>Article 2</h3>
+                <section>
+                    <header>
+                        <h4>Section 1</h4>
+                        <p>By xAuthor</p>
+                        <p>Posted on 02 jav. 2021</p>
+                    </header>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptas similique illum enim!
+                        Saepe,
+                        incidunt!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptas similique illum enim!
+                        Saepe,
+                        incidunt!
+                    </p>
+                </section>
+            </article>
+        </main>
+        <aside class="float-right">
+            <section class="category">
+                <h3>Categories</h3>
+                <ul>
+                    <li >Info</li>
+                    <li >Semantic</li>
+                    <li >Api</li>
+                </ul>
             </section>
-        </article>
-        <article>
-            <h3>Article 2</h3>
-            <section>
-                <header>
-                    <h4>Section 1</h4>
-                    <p>By xAuthor</p>
-                    <p>Posted on 02 jav. 2021</p>
-                </header>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptas similique illum enim! Saepe,
-                    incidunt!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptas similique illum enim! Saepe,
-                    incidunt!
-                </p>
+            <section class="performance">
+                <h3>Performance</h3>
+                Disk usage C:
+                <meter id="disk_c" value="2" min="0" max="10">20%</meter><br>
+                Disk usage D:
+                <meter id="disk_d" value="8" min="0" max="10">80%</meter>
             </section>
-        </article>
-    </main>
-    <aside>
-        <div class="category">
-            <h3>Categories</h3>
-            <ul>
-                <li>Info</li>
-                <li>Semantic</li>
-                <li>Api</li>
-            </ul>
-        </div>
-        <div class="performance">
-            <h3>Performance</h3>
-            Disk usage C:
-            <meter id="disk_c" value="2" min="0" max="10">20%</meter><br>
-            Disk usage D:
-            <meter id="disk_d" value="8" min="0" max="10">80%</meter>
-        </div>
-    </aside>
+        </aside>
+        <div class="clearfix"></div>
+    </div>
     <footer>
-        <p>test1 &copy;copyright 2021</p>
+        <div class="card-footer text-muted">
+            <p>test1 &copy;copyright 2021</p>
+        </div>  
     </footer>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
